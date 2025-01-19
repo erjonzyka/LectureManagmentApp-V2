@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\controllers\\sekretariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lecturemanagmentapp\\views\\sekretaria\\orariview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\orariview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lecturemanagmentapp\\views\\sekretaria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lecturemanagmentapp\\controllers\\sekretariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\controllers\\sekretariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lecturemanagmentapp\\views\\sekretaria\\oretmesimiview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\oretmesimiview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\services\\secretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\services\\secretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lectureapplibrary\\models\\schedulegrupi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\schedulegrupi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\oretmesimiview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\oretmesimiview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\studentetgrupi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,7 +114,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrariView.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\OrariView.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\OrariView.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\OrariView.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\OrariView.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T18:54:45.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\Index.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\Index.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\Index.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\Index.cshtml",
+              "ViewState": "AQIAABsAAACAMzMzMzMbwDEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T18:47:47.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SekretariaController.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "RelativeToolTip": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "ViewState": "AQIAADoBAAAAAAAAAAAAAFQBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:11:53.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ISecretaryService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "ViewState": "AQIAAAoAAAAAMzMzMzMnwBUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:54:19.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Schedule.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Schedule.cs",
+              "ViewState": "AQIAAAgAAADAY2ZmZmYowA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:47:05.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250119184438_ScheduleEntityUpdate2.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Migrations\\20250119184438_ScheduleEntityUpdate2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:44:39.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SecretaryService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Services\\SecretaryService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Services\\SecretaryService.cs",
+              "ViewState": "AQIAAFoAAABgZmZmZmYgwHMAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:14:58.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScheduleGrupi.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\ScheduleGrupi.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\ScheduleGrupi.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\ScheduleGrupi.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\ScheduleGrupi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:42:59.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "OretMesimiView.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\OretMesimiView.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\OretMesimiView.cshtml",
@@ -106,64 +226,11 @@
               "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\OretMesimiView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-19T17:36:58.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T17:36:58.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
-              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Schedule.cs",
-              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
-              "RelativeToolTip": "LectureAppLibrary\\Models\\Schedule.cs",
-              "ViewState": "AQIAAAwAAACAZmZmZmYiwBcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T16:47:05.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SekretariaController.cs",
-              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
-              "RelativeDocumentMoniker": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
-              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
-              "RelativeToolTip": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
-              "ViewState": "AQIAADUBAACALjMzMzMbwD0BAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T20:11:53.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ISecretaryService.cs",
-              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
-              "RelativeDocumentMoniker": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
-              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
-              "RelativeToolTip": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
-              "ViewState": "AQIAAAkAAACAmZmZmZk8wBUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:54:19.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SecretaryService.cs",
-              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
-              "RelativeDocumentMoniker": "LectureAppLibrary\\Services\\SecretaryService.cs",
-              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
-              "RelativeToolTip": "LectureAppLibrary\\Services\\SecretaryService.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAuwF8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T20:14:58.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "StudentetGrupi.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
@@ -175,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PedagogetDheLendet.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
@@ -187,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Student.cs",
               "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Student.cs",
@@ -199,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "_TeGjithaDepartamentet.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
@@ -211,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
@@ -223,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Sekretaria.cs",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Sekretaria.cs",
               "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Sekretaria.cs",
@@ -235,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\MyContext.cs",
               "RelativeDocumentMoniker": "LectureAppLibrary\\MyContext.cs",
@@ -247,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "KrijoDepartament.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
@@ -259,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "_AdminNav.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
@@ -271,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "MenaxhoVitinAkademikView.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
@@ -283,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "NdryshoLende.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
@@ -295,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "_TeGjithaVitetAkademike.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
@@ -307,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "VitiAkademik.cs",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\VitiAkademik.cs",
               "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\VitiAkademik.cs",
@@ -319,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "20250115193446_ContextFix.cs",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
               "RelativeDocumentMoniker": "LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
@@ -331,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ShfaqPedagoget.cshtml",
               "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",
               "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",

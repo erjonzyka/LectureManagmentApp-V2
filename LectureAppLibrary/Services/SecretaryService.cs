@@ -107,6 +107,17 @@ namespace LectureAppLibrary.Services
         }
 
 
+        public List<Schedule> GetUpcomingSchedules()
+        {
+            return _context.Schedules.Include(e=> e.PedagogLenda)
+                .ThenInclude(e=> e.Lenda)
+                .Include(e => e.PedagogLenda.Pedagog)
+                .Include(e=> e.Classroom)
+                .Where(e=> e.StartTime > DateTime.Now) .ToList();
+        }
+
+
+
         private bool Save()
         {
             var saved = _context.SaveChanges();

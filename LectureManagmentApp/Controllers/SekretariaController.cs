@@ -270,6 +270,7 @@ namespace LectureManagmentApp.Controllers
         [HttpPost("krijo/rezervim")]
         public IActionResult KrijoRezervim(ProductViewModel pvm)
         {
+            pvm.Schedule.VakademikID = (int)HttpContext.Session.GetInt32("VAkademikId");
             List<string> errorMessages = new List<string>();
 
             if (pvm.Schedule.StartTime == default)
@@ -331,6 +332,13 @@ namespace LectureManagmentApp.Controllers
             TempData["Message"] = "Rezervimi u krijua me sukses.";
             return RedirectToAction("OretMesimiView");
 
+        }
+
+        [SecretaryCheck]
+        [HttpGet("orari/view")]
+        public IActionResult OrariView()
+        {
+            return View(_secretary.GetUpcomingSchedules());
         }
     }
 }

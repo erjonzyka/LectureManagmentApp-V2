@@ -1,0 +1,37 @@
+﻿<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+@using LectureAppLibrary.Models
+@model List<Schedule> 
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Fillimi</th>
+            <th scope="col">Perfundimi</th>
+            <th scope="col">Salla</th>
+            <th scope="col">Pedagogu</th>
+            <th scope="col">Lenda</th>
+            <th scope="col">Veprim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StartTime</td>
+                <td>@item.EndTime</td>
+                 <td>@item.Classroom.SallaNo</td>
+                <td>@item.PedagogLenda.Pedagog.FirstName @item.PedagogLenda.Pedagog.LastName</td>
+                <td>@item.PedagogLenda.Lenda.EmriLendes</td>
+                <td>
+                    <!-- Per tu rregulluar neser -->
+
+                    <a asp-action="EditSchedule" asp-route-id="@item.ScheduleID" class="btn btn-sm btn-primary">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+
+                </td>
+        </tr>
+        }
+    </tbody>
+</table>

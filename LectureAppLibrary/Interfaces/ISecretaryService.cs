@@ -19,6 +19,6 @@ namespace LectureAppLibrary.Interfaces
         List<Lenda> MerrLendetQeNukJep(int pedagoguId);
         List<Pedagog> MerrPedagogetQeNukJapin(int lendaId);
         bool KontrolloLidhjenPedagogLende(int pedagogId, int lendaId);
-       // bool IsPedagogLendaBusy(int id);
+        List<Schedule> GetUpcomingSchedules();
     }
 }

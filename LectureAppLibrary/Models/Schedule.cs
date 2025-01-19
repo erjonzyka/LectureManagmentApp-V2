@@ -27,5 +27,6 @@ namespace LectureAppLibrary.Models
         public Classroom? Classroom { get; set; }
         public VitiAkademik? VitiAkademik { get; set; }
         public ICollection<Attendance>? Attendances { get; set; }
+        public ICollection<ScheduleGrupi>? ScheduleGrupet { get; set; }
     }
 }
