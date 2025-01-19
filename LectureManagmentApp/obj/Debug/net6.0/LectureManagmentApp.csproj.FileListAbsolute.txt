@@ -139,3 +139,4 @@ C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-mai
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp\obj\Debug\net6.0\LectureManagmentApp.pdb
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp\obj\Debug\net6.0\LectureManagmentApp.genruntimeconfig.cache
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp\obj\Debug\net6.0\ref\LectureManagmentApp.dll
+C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp\obj\Debug\net6.0\LectureManagmentApp.sourcelink.json

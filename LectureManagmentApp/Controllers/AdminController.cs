@@ -175,6 +175,45 @@ namespace LectureManagmentApp.Controllers
             return RedirectToAction("ShtoLendeForm", new { message = "Lenda u ruajt me sukses!" });
         }
 
+        [AdminCheck]
+        [HttpGet("shto/salle/form")]
+        public IActionResult ShtoSalleForm() {
+            ProductViewModel pvm = new ProductViewModel();
+            pvm.Classrooms = _admin.GetAllClassrooms();
+            return View(pvm); 
+        }
+
+        [AdminCheck]
+        [HttpPost("shto/salle")]
+        public IActionResult ShtoSalle(ProductViewModel pvm)
+        {
+            if (pvm.Classroom.SallaNo == null )
+            {
+                ModelState.AddModelError("Classroom.SallaNo", "Numri i salles nuk mund te jet bosh.");
+                pvm.Classrooms = _admin.GetAllClassrooms();
+                return View("ShtoSalleForm", pvm);
+            }
+
+            if (pvm.Classroom.Kapaciteti == null)
+            {
+                ModelState.AddModelError("Classroom.Kapaciteti", "Kapaciteti i salles nuk mund te jet bosh.");
+                pvm.Classrooms = _admin.GetAllClassrooms();
+                return View("ShtoSalleForm", pvm);
+            }
+
+            if (_admin.CheckClassExistence(pvm.Classroom.SallaNo))
+                {
+                    ModelState.AddModelError("Classroom.SallaNo", "Kjo Salle ekziston ne sistem.");
+                    pvm.Classrooms = _admin.GetAllClassrooms();
+                    return View("ShtoSalleForm", pvm);
+                }
+                _context.Add(pvm.Classroom);
+                _context.SaveChanges();
+                return RedirectToAction("ShtoSalleForm");
+            
+        }
+
+
 
         [AdminCheck]
         [HttpGet("menaxho/vitin/akademik")]

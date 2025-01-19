@@ -11,7 +11,8 @@ namespace LectureAppLibrary.Models
     {
         [Key]
         public int ClassroomID { get; set; }
-        public string Salla { get; set; }
+        [Required(ErrorMessage ="Vendosni numrin e salles")]
+        public int SallaNo { get; set; }
         public int Kapaciteti{ get; set; }
 
         public ICollection<Schedule>? Schedules { get; set; }

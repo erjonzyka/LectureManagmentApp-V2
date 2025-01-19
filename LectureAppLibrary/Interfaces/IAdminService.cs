@@ -1,4 +1,5 @@
 ﻿using LectureAppLibrary.Models;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +26,8 @@ namespace LectureAppLibrary.Interfaces
         bool KontrolloPerVitTeHapurAkademik();
         VitiAkademik MerrVitinAktual();
         VitiAkademik MerrVitinAkademik(int id);
+        List<Classroom> GetAllClassrooms();
+        bool CheckClassExistence(int SallaNo);
+        List<PedagogLenda> MerrPedagogetDheLendet();
     }
 }

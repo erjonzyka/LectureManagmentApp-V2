@@ -19,5 +19,9 @@ namespace LectureAppLibrary.Models
         public Grupi? Grupi { get; set; }
         public List<Student>? Students { get; set;}
         public List<Pedagog>? Pedagoget { get; set; }
+        public Classroom? Classroom { get; set; }
+        public List<Classroom>? Classrooms { get; set; }
+        public List<PedagogLenda>? PedagogetDheLendet { get; set; }
+        public Schedule? Schedule { get; set; }
     }
 }

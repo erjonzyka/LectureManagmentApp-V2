@@ -46,12 +46,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2h0b0xlbmRlRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/ShtoSalleForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2h0b1NhbGxlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaDepartamentet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhRGVwYXJ0YW1lbnRldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaLendet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhTGVuZGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaSallat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhU2FsbGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaVitetAkademike.cshtml]
@@ -108,6 +116,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/LendaDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxMZW5kYURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/OretMesimiView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxPcmV0TWVzaW1pVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/PedagogetDheLendet.cshtml]

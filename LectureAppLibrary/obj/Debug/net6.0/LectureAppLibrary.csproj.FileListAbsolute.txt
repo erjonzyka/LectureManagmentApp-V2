@@ -27,3 +27,4 @@ C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-mai
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureAppLibrary\obj\Debug\net6.0\LectureAppLibrary.pdb
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureAppLibrary\obj\Debug\net6.0\LectureAppLibrary.genruntimeconfig.cache
 C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureAppLibrary\obj\Debug\net6.0\ref\LectureAppLibrary.dll
+C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureAppLibrary\obj\Debug\net6.0\LectureAppLibrary.sourcelink.json

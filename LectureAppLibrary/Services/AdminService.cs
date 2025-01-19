@@ -121,6 +121,21 @@ namespace LectureAppLibrary.Services
             return _context.VitetAkademike.FirstOrDefault(e => e.Id == id);
         }
 
+        public List<Classroom> GetAllClassrooms()
+        {
+            return _context.Classrooms.OrderBy(e=> e.SallaNo).ToList();
+        }
+
+        public bool CheckClassExistence(int SallaNo)
+        {
+            return _context.Classrooms.Any(e => e.SallaNo == SallaNo);
+        }
+
+        public List<PedagogLenda> MerrPedagogetDheLendet()
+        {
+            return _context.PedagogLenda.Include(e=>e.Pedagog).Include(e=> e.Lenda).ToList();
+        }
+
         private bool Save()
         {
             var saved = _context.SaveChanges();

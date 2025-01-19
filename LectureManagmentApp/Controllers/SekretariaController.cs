@@ -2,6 +2,7 @@
 using LectureAppLibrary;
 using Microsoft.AspNetCore.Mvc;
 using LectureAppLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace LectureManagmentApp.Controllers
@@ -59,15 +60,15 @@ namespace LectureManagmentApp.Controllers
                 return View("CreateGroupForm", pvm);
             }
 
-                if (_secretary.CheckExistence(pvm.Grupi.Paraleli, pvm.Grupi.Viti))
-                {
-                    ModelState.AddModelError("Grupi.Paraleli", "Grupi tashme eshte i krijuar ne sistem.");
-                    return View("CreateGroupForm", pvm);
-                }
+            if (_secretary.CheckExistence(pvm.Grupi.Paraleli, pvm.Grupi.Viti))
+            {
+                ModelState.AddModelError("Grupi.Paraleli", "Grupi tashme eshte i krijuar ne sistem.");
+                return View("CreateGroupForm", pvm);
+            }
 
-                _context.Add(pvm.Grupi);
-                _context.SaveChanges();
-                return RedirectToAction("CreateGroupForm");
+            _context.Add(pvm.Grupi);
+            _context.SaveChanges();
+            return RedirectToAction("CreateGroupForm");
         }
 
         [SecretaryCheck]
@@ -99,7 +100,7 @@ namespace LectureManagmentApp.Controllers
         public IActionResult HiqNgaGrupi(int studentid)
         {
             Student? studenti = _secretary.GetStudent(studentid);
-           int? id = studenti.GrupiID;
+            int? id = studenti.GrupiID;
             studenti.GrupiID = null;
             _context.SaveChanges();
             return RedirectToAction("StudentetGrupi", new { id = id });
@@ -172,7 +173,7 @@ namespace LectureManagmentApp.Controllers
                 return RedirectToAction("PedagoguDetails", new { id = id });
             }
 
-            var ekzistonLidhja = _secretary.KontrolloLidhjenPedagogLende(id,LendaId);
+            var ekzistonLidhja = _secretary.KontrolloLidhjenPedagogLende(id, LendaId);
             if (ekzistonLidhja)
             {
                 TempData["Message"] = "Kjo lende tashme eshte e lidhur me kete pedagog.";
@@ -254,5 +255,82 @@ namespace LectureManagmentApp.Controllers
         }
 
 
+        [SecretaryCheck]
+        [HttpGet("oret/mesimi/view")]
+        public IActionResult OretMesimiView()
+        {
+            ProductViewModel pvm = new ProductViewModel();
+            pvm.PedagogetDheLendet = _admin.MerrPedagogetDheLendet();
+            pvm.Classrooms = _admin.GetAllClassrooms();
+            return View(pvm);
+        }
+
+
+        [SecretaryCheck]
+        [HttpPost("krijo/rezervim")]
+        public IActionResult KrijoRezervim(ProductViewModel pvm)
+        {
+            List<string> errorMessages = new List<string>();
+
+            if (pvm.Schedule.StartTime == default)
+            {
+                errorMessages.Add("Data dhe ora e fillimit duhet të plotesohet.");
+            }
+            if (pvm.Schedule.EndTime == default)
+            {
+                errorMessages.Add("Data dhe ora e perfundimit duhet të plotesohet.");
+            }
+
+            if (pvm.Schedule.StartTime < DateTime.Now)
+            {
+                errorMessages.Add("Data dhe ora e fillimit nuk mund te jete ne te kaluaren.");
+            }
+            if (pvm.Schedule.EndTime < DateTime.Now)
+            {
+                errorMessages.Add("Data dhe ora e perfundimit nuk mund te jete ne te kaluaren.");
+            }
+
+            if (pvm.Schedule.StartTime.Hour < 8 || pvm.Schedule.EndTime.Hour > 18)
+            {
+                errorMessages.Add("Orari duhet te jete ndermjet 08:00 dhe 18:00.");
+            }
+            if (pvm.Schedule.StartTime >= pvm.Schedule.EndTime)
+            {
+                errorMessages.Add("Data dhe ora e fillimit duhet te jete me e hershme se ajo e perfundimit.");
+            }
+            var isClassroomBusy = _context.Schedules.Any(s =>
+                s.ClassroomID == pvm.Schedule.ClassroomID &&
+                ((pvm.Schedule.StartTime >= s.StartTime && pvm.Schedule.StartTime < s.EndTime) ||
+                 (pvm.Schedule.EndTime > s.StartTime && pvm.Schedule.EndTime <= s.EndTime)));
+
+            if (isClassroomBusy)
+            {
+                errorMessages.Add("Salla eshte e zene per kete orar.");
+            }
+            var isPedagogLendaBusy = _context.Schedules.Any(s =>
+                s.PedagogLendaID == pvm.Schedule.PedagogLendaID &&
+                ((pvm.Schedule.StartTime >= s.StartTime && pvm.Schedule.StartTime < s.EndTime) ||
+                 (pvm.Schedule.EndTime > s.StartTime && pvm.Schedule.EndTime <= s.EndTime)));
+
+            if (isPedagogLendaBusy)
+            {
+                errorMessages.Add("Pedagogu/Lenda jane te zena per kete orar.");
+            }
+
+            if (errorMessages.Count > 0)
+            {
+                TempData["Errors"] = errorMessages;
+                pvm.PedagogetDheLendet = _admin.MerrPedagogetDheLendet();
+                pvm.Classrooms = _admin.GetAllClassrooms();
+                return View("OretMesimiView",pvm);
+            }
+
+            _context.Schedules.Add(pvm.Schedule);
+            _context.SaveChanges();
+
+            TempData["Message"] = "Rezervimi u krijua me sukses.";
+            return RedirectToAction("OretMesimiView");
+
+        }
     }
 }
