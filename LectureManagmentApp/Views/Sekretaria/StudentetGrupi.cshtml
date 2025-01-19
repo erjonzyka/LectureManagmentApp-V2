@@ -1,0 +1,59 @@
+﻿﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using LectureAppLibrary.Models
+@model ProductViewModel
+
+<h2 class="text-center">Grupi: @Model.Grupi.Viti - @Model.Grupi.Paraleli</h2>
+
+<div class="d-flex justify-content-around">
+    <form asp-action="ShtoNeGrup" asp-route-id="@Model.Grupi.GrupiID" method="post" asp-controller="Sekretaria">
+        <div class="form-group">
+            <label for="studentSelect">Shto Student</label>
+            <select class="form-control" id="studentSelect" name="StudentID">
+                @foreach (var student in Model.Students)
+                {
+                    <option value="@student.StudentID">@student.FirstName @student.LastName</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Shto</button>
+    </form>
+</div>
+
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">Emri</th>
+            <th scope="col">Mbiemri</th>
+            <th scope="col">Email</th>
+            <th scope="col">Statusi i Kartes</th>
+            <th scope="col">Veprim</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Grupi.Students)
+        {
+            <tr>
+            <td>@student.FirstName</td>
+            <td>@student.LastName</td>
+            <td>@student.Email</td>
+                @if (student.KartaStatus)
+                {
+                <td>Aktive</td>
+                <td><a asp-action="PezulloKarteStudenti" asp-route-id="@student.StudentID" class="btn btn-outline-secondary">Pezullo Karten</a></td>
+                }
+                else
+                {
+                    <td>Pezulluar</td>
+                    <td><a asp-action="AktivizoKarteStudenti" asp-route-id="@student.StudentID" class="btn btn-outline-success">Aktivizo Karten</a></td>
+                }
+
+                <td><a class="btn btn-outline-danger" asp-action="HiqNgaGrupi" asp-route-studentid="@student.StudentID">Hiq nga Grupi</a></td>
+
+        </tr>
+
+        }
+    </tbody>
+</table>

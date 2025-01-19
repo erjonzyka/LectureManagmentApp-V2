@@ -1,0 +1,21 @@
+﻿@using LectureAppLibrary.Models
+@model List<Department>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Emri i Departamentit</th>
+            <th scope="col">Veprime</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.DepartmentName</td>
+            <td><a asp-action="FshiDepartament" asp-route-id="@item.DepartmentID" asp-controller="Admin" class="btn btn-danger">Fshi</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

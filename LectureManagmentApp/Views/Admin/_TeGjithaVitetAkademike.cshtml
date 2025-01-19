@@ -1,0 +1,23 @@
+﻿@using LectureAppLibrary.Models
+@model List<VitiAkademik>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Fillimi</th>
+            <th scope="col">Perfundimi</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Fillimi</td>
+                <td>@item.Perfundimi</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

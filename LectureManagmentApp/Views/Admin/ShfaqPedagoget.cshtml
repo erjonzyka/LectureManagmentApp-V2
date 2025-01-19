@@ -1,0 +1,33 @@
+﻿@using LectureAppLibrary.Models
+@model List<Pedagog>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Emri</th>
+            <th scope="col">Mbiemri</th>
+            <th scope="col">Email</th>
+            <th scope="col">Departamentet</th>
+            <th scope="col">Veprimet</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.Email</td>
+            @if(@item.DepartmentID == null){
+                <td>Pa caktuar</td>
+            }
+            else{
+                <td>@item.Department.DepartmentName</td>
+            }
+                <td><a asp-action="NdryshoPedagog" asp-controller="Admin" asp-route-id="@item.PedagogID"><i class="fas fa-pencil-alt"></i></a></td>
+        </tr>
+        }
+    </tbody>
+</table>

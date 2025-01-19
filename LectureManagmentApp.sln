@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureManagmentApp", "LectureManagmentApp\LectureManagmentApp.csproj", "{6E69D164-81EF-417A-AA43-0670F2229048}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76FEBD81-A508-4BAC-8433-8948D550637C} = {76FEBD81-A508-4BAC-8433-8948D550637C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureAppLibrary", "LectureAppLibrary\LectureAppLibrary.csproj", "{76FEBD81-A508-4BAC-8433-8948D550637C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E69D164-81EF-417A-AA43-0670F2229048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E69D164-81EF-417A-AA43-0670F2229048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E69D164-81EF-417A-AA43-0670F2229048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E69D164-81EF-417A-AA43-0670F2229048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FEBD81-A508-4BAC-8433-8948D550637C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FEBD81-A508-4BAC-8433-8948D550637C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FEBD81-A508-4BAC-8433-8948D550637C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FEBD81-A508-4BAC-8433-8948D550637C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {124A8B7A-D6B4-4605-9810-73227E56F218}
+	EndGlobalSection
+EndGlobal

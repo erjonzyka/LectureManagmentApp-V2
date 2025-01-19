@@ -1,0 +1,57 @@
+﻿@using LectureAppLibrary.Models
+@model ProductViewModel
+
+<h4>Pedagogu: @Model.Pedagog.FirstName @Model.Pedagog.LastName</h4>
+
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+<div class="d-flex justify-content-around">
+    <form asp-action="ShtoLendeNePedagog" asp-route-id="@Model.Pedagog.PedagogID" method="post" asp-controller="Sekretaria">
+        <div class="form-group">
+            <label for="studentSelect">Shto Lende</label>
+            <select class="form-control" id="studentSelect" name="LendaId">
+                @foreach (var item in Model.Lendet)
+                {
+                    <option value="@item.LendaID">@item.EmriLendes</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Shto</button>
+    </form>
+</div>
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Emri i Lendes</th>
+            <th scope="col">Kredite</th>
+            <th scope="col">Veprime</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pedagog.PedagogLenda)
+        {
+            <tr>
+            <td>@item.Lenda.EmriLendes</td>
+            <td>@item.Lenda.Kredite</td>
+                <td>
+                    <a class="btn btn-outline-danger btn-sm" asp-action="FshiLendePedagog" asp-controller="Sekretaria" asp-route-id="@item.Id">Fshi</a>
+                </td>
+        </tr>
+        }
+    </tbody>
+</table>

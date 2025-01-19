@@ -1,0 +1,23 @@
+﻿@using LectureAppLibrary.Models
+@model List<Lenda>
+
+    <h2 class="text-center">Lendet</h2>
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">Emri i Lendes</th>
+            <th scope="col">Kredite</th>
+            <th scope="col">Pedagog</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td><a class="no-underline" asp-action="LendaDetails" asp-route-id="@item.LendaID" asp-controller="Sekretaria">@item.EmriLendes</a></td>
+                <td>@item.Kredite</td>
+                <td>@item.PedagogLenda.Count()</td>
+        </tr>
+        }
+    </tbody>
+</table>

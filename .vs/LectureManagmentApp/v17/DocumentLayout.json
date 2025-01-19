@@ -1,0 +1,601 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|c:\\users\\zykae\\onedrive\\desktop\\lecturemanagmentapp-main\\lecturemanagmentapp-main\\lectureapplibrary\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\controllers\\sekretariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\controllers\\sekretariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\lendadetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\lendadetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\services\\secretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\services\\secretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\pedagogudetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\pedagogudetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\interfaces\\isecretaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\_tegjithalendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\_tegjithalendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\_tegjithapedagoget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\_tegjithapedagoget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\pedagoglenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\pedagoglenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\studentetgrupi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\studentetgrupi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\lenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\lenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\pedagog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\pedagog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\_tegjithagrupet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\_tegjithagrupet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\pedagogetdhelendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\pedagogetdhelendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\sekretaria\\creategroupform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\sekretaria\\creategroupform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\_tegjithadepartamentet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\_tegjithadepartamentet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\sekretaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\sekretaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\krijodepartament.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\krijodepartament.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\shared\\_adminnav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\shared\\_adminnav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\menaxhovitinakademikview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\menaxhovitinakademikview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\ndrysholende.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\ndrysholende.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\_tegjithavitetakademike.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\_tegjithavitetakademike.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lectureapplibrary\\models\\vitiakademik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:lectureapplibrary\\models\\vitiakademik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\_tegjithalendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\_tegjithalendet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\lecturemanagmentapp\\views\\admin\\shfaqpedagoget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E69D164-81EF-417A-AA43-0670F2229048}|LectureManagmentApp\\LectureManagmentApp.csproj|solutionrelative:lecturemanagmentapp\\views\\admin\\shfaqpedagoget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEBD81-A508-4BAC-8433-8948D550637C}|LectureAppLibrary\\LectureAppLibrary.csproj|solutionrelative:LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LendaDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\LendaDetails.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\LendaDetails.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\LendaDetails.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\LendaDetails.cshtml",
+              "ViewState": "AQIAABcAAAAgZmZmZmYuwCcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T17:10:17.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SecretaryService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Services\\SecretaryService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\SecretaryService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Services\\SecretaryService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAqwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:14:58.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PedagoguDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\PedagoguDetails.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\PedagoguDetails.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\PedagoguDetails.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\PedagoguDetails.cshtml",
+              "ViewState": "AQIAACEAAAAAZmZmZmYkwDMAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T16:26:14.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Services\\AdminService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Services\\AdminService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Services\\AdminService.cs",
+              "ViewState": "AQIAAEAAAAAAMzMzMzMpwEcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T17:06:38.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SekretariaController.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "RelativeToolTip": "LectureManagmentApp\\Controllers\\SekretariaController.cs",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAuwPkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:11:53.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ISecretaryService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Interfaces\\ISecretaryService.cs",
+              "ViewState": "AQIAAAkAAAAAMzMzMzMrwBMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:54:19.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Interfaces\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Interfaces\\IAdminService.cs",
+              "ViewState": "AQIAAAYAAAAAZWZmZmYkwBUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T17:06:43.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_TeGjithaPedagoget.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaPedagoget.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaPedagoget.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaPedagoget.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaPedagoget.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:59:19.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Schedule.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Schedule.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Schedule.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAABAPRcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:47:05.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_TeGjithaLendet.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaLendet.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaLendet.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaLendet.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaLendet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:59:05.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PedagogLenda.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\PedagogLenda.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\PedagogLenda.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\PedagogLenda.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\PedagogLenda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T12:26:39.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250118164926_ScheduleEntityUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Migrations\\20250118164926_ScheduleEntityUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:49:27.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Pedagog.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Pedagog.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Pedagog.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Pedagog.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Pedagog.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvykAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T20:19:41.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Lenda.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Lenda.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Lenda.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Lenda.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Lenda.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T15:00:34.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Program.cs",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Program.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Program.cs",
+              "RelativeToolTip": "LectureManagmentApp\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:15:56.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentetGrupi.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\StudentetGrupi.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:57:04.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\ProductViewModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:51:43.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_TeGjithaGrupet.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaGrupet.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaGrupet.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaGrupet.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\_TeGjithaGrupet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:59:47.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PedagogetDheLendet.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\PedagogetDheLendet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:56:57.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateGroupForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\CreateGroupForm.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Sekretaria\\CreateGroupForm.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Sekretaria\\CreateGroupForm.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Sekretaria\\CreateGroupForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T14:57:15.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "LectureManagmentApp\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAADAAAAAAZDMzMzMXwEMAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:31:41.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Student.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Student.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwDAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T13:11:17.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_TeGjithaDepartamentet.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\_TeGjithaDepartamentet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T20:47:15.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T19:43:45.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Sekretaria.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Sekretaria.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\Sekretaria.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\Sekretaria.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\Sekretaria.cs",
+              "ViewState": "AQIAAA4AAAAA/f////8PwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T20:34:51.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\MyContext.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\MyContext.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\MyContext.cs",
+              "RelativeToolTip": "LectureAppLibrary\\MyContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:00:13.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "KrijoDepartament.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\KrijoDepartament.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwB8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T13:18:44.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_AdminNav.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Shared\\_AdminNav.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T20:05:06.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MenaxhoVitinAkademikView.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\MenaxhoVitinAkademikView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T19:39:38.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwC8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T18:02:49.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NdryshoLende.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\NdryshoLende.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T20:27:48.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_TeGjithaVitetAkademike.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\_TeGjithaVitetAkademike.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T20:02:40.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VitiAkademik.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\VitiAkademik.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Models\\VitiAkademik.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Models\\VitiAkademik.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Models\\VitiAkademik.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T18:40:53.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250115193446_ContextFix.cs",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
+              "RelativeDocumentMoniker": "LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
+              "RelativeToolTip": "LectureAppLibrary\\Migrations\\20250115193446_ContextFix.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T19:34:47.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_TeGjithaLendet.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaLendet.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\_TeGjithaLendet.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\_TeGjithaLendet.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\_TeGjithaLendet.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T18:25:12.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShfaqPedagoget.cshtml",
+              "DocumentMoniker": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",
+              "RelativeDocumentMoniker": "LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",
+              "ToolTip": "C:\\Users\\zykae\\OneDrive\\Desktop\\LectureManagmentApp-main\\LectureManagmentApp-main\\LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",
+              "RelativeToolTip": "LectureManagmentApp\\Views\\Admin\\ShfaqPedagoget.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T19:59:28.588Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

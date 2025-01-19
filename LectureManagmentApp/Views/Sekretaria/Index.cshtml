@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="mb-5 text-center">Paneli i Administratorit</h1>
+
+<div class="container d-flex justify-content-around text-center">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Regjistro student</h5>
+            <p class="card-text">Krijimi i studenteve te rinj ne sistem</p>
+            <a asp-controller="Login" asp-action="StudentReg" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Krijo dhe menaxho grupet mesimore</h5>
+            <p class="card-text">Krijo nje grup te ri mesimor ose cakto studente per grupet ekzistuese</p>
+            <a asp-controller="Sekretaria" asp-action="CreateGroupForm" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+    
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Pedagoget dhe lendet</h5>
+            <p class="card-text">Rregullimi i lidhjes Pedagog-Lende</p>
+            <a asp-controller="Sekretaria" asp-action="PedagogetDheLendet" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+
+
+
+
+</div>

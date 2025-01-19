@@ -1,0 +1,20 @@
+﻿﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using LectureAppLibrary.Models
+@model ProductViewModel
+
+
+
+
+<div class="d-flex justify-content-around">
+    <div>
+        @await Html.PartialAsync("_TeGjithaPedagoget", @Model.Pedagoget)
+  
+    </div>
+
+
+
+    <div class="alldepartments">
+        @await Html.PartialAsync("_TeGjithaLendet", @Model.Lendet)
+    </div>
+</div>

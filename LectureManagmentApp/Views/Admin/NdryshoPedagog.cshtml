@@ -1,0 +1,50 @@
+﻿@using LectureAppLibrary.Models
+@model ProductViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="col-6">
+            <h1>Regjistro Pedagog</h1>
+            <form method="post" asp-action="RuajNdryshimetPedagog" asp-controller="Admin" asp-route-id="@Model.Pedagog.PedagogID">
+                <div class="form-group">
+                    <label asp-for="@Model.Pedagog.FirstName">First Name</label>
+                    <input asp-for="@Model.Pedagog.FirstName" class="form-control" id="exampleFormControlInput1">
+                    <span asp-validation-for="@Model.Pedagog.FirstName" class="text-danger font-italic mb-3"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Pedagog.LastName">Last Name</label>
+                    <input asp-for="@Model.Pedagog.LastName" class="form-control " id="exampleFormControlInput1">
+                    <span asp-validation-for="@Model.Pedagog.LastName" class="text-danger font-italic mb-3"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Pedagog.Email">Email</label>
+                    <input asp-for="@Model.Pedagog.Email" class="form-control " id="exampleFormControlInput1">
+                    <span asp-validation-for="@Model.Pedagog.Email" class="text-danger font-italic mb-3"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="@Model.Pedagog.DepartmentID">Cakto nje departament</label>
+                    <select class="form-control" id="exampleFormControlSelect1" asp-for="@Model.Pedagog.DepartmentID">
+                        @foreach (var item in Model.Departments)
+                        {
+                            <option value="@item.DepartmentID">@item.DepartmentName</option>
+                        }
+
+                    </select>
+                </div>
+                
+                <button type="submit" class="mt-4 btn btn-success w-100 p-3">Ruaj</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

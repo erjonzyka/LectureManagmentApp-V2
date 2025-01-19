@@ -1,0 +1,52 @@
+﻿<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+@using LectureAppLibrary.Models
+@model ProductViewModel
+
+
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-info">
+        @ViewBag.Message
+    </div>
+}
+
+
+    <div class="forma">
+        <h1>Ndrysho Lenden</h1>
+
+
+        <form asp-action="RuajNdryshimLenda" asp-controller="Admin" method="post" asp-route-id="@Model.Lenda.LendaID">
+            <div class="form-group">
+                <label asp-for="@Model.Lenda.EmriLendes">Emri i Lendes</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" asp-for="@Model.Lenda.EmriLendes" placeholder="Vendosni emertimin e lendes">
+                <span asp-validation-for="@Model.Lenda.EmriLendes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lenda.Kredite">Kreditet</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" asp-for="@Model.Lenda.Kredite" placeholder="Vendosni sa kredite ka lenda">
+                <span asp-validation-for="@Model.Lenda.Kredite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lenda.OreLeksioni">Ore Leksioni</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" asp-for="@Model.Lenda.OreLeksioni">
+                <span asp-validation-for="@Model.Lenda.OreLeksioni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lenda.OreSeminari">Ore Seminari</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" asp-for="@Model.Lenda.OreSeminari">
+                <span asp-validation-for="@Model.Lenda.OreSeminari" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lenda.DepartmentID">Zgjidh Departamentin</label>
+                <select class="form-control" id="exampleFormControlSelect1" asp-for="@Model.Lenda.DepartmentID">
+                    @foreach (var item in Model.Departments)
+                    {
+
+                        <option value="@item.DepartmentID">@item.DepartmentName</option>
+
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-outline-primary mt-4">Ruaj Lenden</button>
+        </form>

@@ -1,0 +1,42 @@
+﻿@using LectureAppLibrary.Models
+@model ProductViewModel
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-info">
+        @ViewBag.Message
+    </div>
+}
+
+<h1 class="text-center">Menaxhimi i vitit akademik</h1>
+<div class="d-flex justify-content-around">
+    <div class="forma">
+
+    @if (@HttpContextAccessor.HttpContext.Session.GetInt32("VAkademikId") != null )
+        {
+            <h4>Ndrysho Statusin e Vitit Akademik</h4>
+
+            <form method="post" asp-action="NdryshoStatusVitAkademik" asp-route-id ="@Model.VitiAkademik.Id">
+                <select class="form-control form-control-lg" asp-for="@Model.VitiAkademik.Status">
+                    <option value="Regjistrime">Regjistrime</option>
+                    <option value="Semester i Rregullt">Semester i Rregullt</option>
+                    <option value="Sezon">Sezon</option>
+                </select>
+                <button type="submit" class="btn btn-outline-primary mt-4">Ndrysho Statusin</button>
+            </form>
+
+            <a class="btn btn btn-danger btn-lg btn-block mt-4" asp-action="MbyllVitinAkademik" asp-route-id="@Model.VitiAkademik.Id">Mbyll Vitin Akademik</a>
+        }
+        else
+        {
+            <a type="button" class="btn btn-outline-primary btn-lg btn-block mt-4" asp-action="HapVitinAkademik" asp-controller="Admin">Krijo nje vit te ri akademik</a>
+        }
+
+    </div>
+    <div class="alldepartments">
+        @await Html.PartialAsync("_TeGjithaVitetAkademike", @Model.VitetAkademike);
+    </div>
+</div>

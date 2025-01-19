@@ -1,0 +1,175 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LectureManagmentApp
+build_property.RootNamespace = LectureManagmentApp
+build_property.ProjectDir = C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\zykae\OneDrive\Desktop\LectureManagmentApp-main\LectureManagmentApp-main\LectureManagmentApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/KrijoDepartament.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3Jpam9EZXBhcnRhbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/MenaxhoVitinAkademikView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVuYXhob1ZpdGluQWthZGVtaWtWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/NdryshoLende.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmRyeXNob0xlbmRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/NdryshoPedagog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmRyeXNob1BlZGFnb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/ShfaqPedagoget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hmYXFQZWRhZ29nZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/ShtoLendeForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2h0b0xlbmRlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaDepartamentet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhRGVwYXJ0YW1lbnRldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaLendet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhTGVuZGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Admin/_TeGjithaVitetAkademike.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1RlR2ppdGhhVml0ZXRBa2FkZW1pa2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/PedagogLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUGVkYWdvZ0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/ProfessorReg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUHJvZmVzc29yUmVnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/SecretaryLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2VjcmV0YXJ5TG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/SecretaryReg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2VjcmV0YXJ5UmVnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/StudentLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU3R1ZGVudExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Login/StudentReg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU3R1ZGVudFJlZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Pedagog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkYWdvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/CreateGroupForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxDcmVhdGVHcm91cEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/LendaDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxMZW5kYURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/PedagogetDheLendet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxQZWRhZ29nZXREaGVMZW5kZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/PedagoguDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxQZWRhZ29ndURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/StudentetGrupi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxTdHVkZW50ZXRHcnVwaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/_TeGjithaGrupet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxfVGVHaml0aGFHcnVwZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/_TeGjithaLendet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxfVGVHaml0aGFMZW5kZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Sekretaria/_TeGjithaPedagoget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VrcmV0YXJpYVxfVGVHaml0aGFQZWRhZ29nZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_AdminNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_PedagogNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QZWRhZ29nTmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_SekretariaNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWtyZXRhcmlhTmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_StudentNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50TmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zykae/OneDrive/Desktop/LectureManagmentApp-main/LectureManagmentApp-main/LectureManagmentApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1yusib2mvf

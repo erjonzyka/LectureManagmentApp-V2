@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="mb-5 text-center">Paneli i Administratorit</h1>
+
+<div class="container d-flex justify-content-around text-center">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Menaxho Vitin Akademik</h5>
+            <p class="card-text">Hapja dhe menaxhimi i viteve akademike</p>
+            <a asp-controller="Admin" asp-action="MenaxhoVitinAkademikView" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Krijo Departament</h5>
+    <p class="card-text">Shto nje departament te ri ose shiko departamentet e regjistruara</p>
+        <a asp-controller="Admin" asp-action="KrijoDepartament" class="btn btn-primary">Shko</a>
+  </div>
+</div>
+
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Pedagoget</h5>
+            <p class="card-text">Shto nje pedagog te ri ose shiko pedagoget e regjistruar</p>
+            <a asp-controller="Admin" asp-action="ShfaqPedagoget" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Lendet</h5>
+            <p class="card-text">Shto nje lende te re ose shiko lendet ekzistuese</p>
+            <a asp-controller="Admin" asp-action="ShtoLendeForm" class="btn btn-primary">Shko</a>
+        </div>
+    </div>
+
+
+
+</div>
