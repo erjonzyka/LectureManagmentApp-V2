@@ -1,0 +1,63 @@
+﻿<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+@using LectureAppLibrary.Models
+@model ProductViewModel
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+<h2>Profesori: @Model.Schedule.PedagogLenda.Pedagog.FirstName - @Model.Schedule.PedagogLenda.Pedagog.LastName</h2>
+<h4>Lenda: @Model.Schedule.PedagogLenda.Lenda.EmriLendes</h4>
+<h5>Orari: @Model.Schedule.StartTime.ToString("dd/MM/yyyy HH:mm")</h5>
+
+<h5>Grupet qe marrin pjese:</h5>
+
+
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">Grupi</th>
+            <th scope="col">Veprim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model.ListScheduleGrupi)
+        {
+            <tr>
+             <td>@item.Grupi.Viti-@item.Grupi.Paraleli</td>
+                <td><a asp-action="HiqGrupin" asp-route-id="@item.Id" class="text-danger"> <i class="fa fa-trash" aria-hidden="true"></i> </a> </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+@if (Model.TeGjithaGrupet.Count > 0)
+{
+
+<h5 class="mt-3 mb-3">Shtoni grupe per kete orar:</h5>
+
+<form asp-action="AddGroupsToSchedule" method="post">
+    <input type="hidden" name="ScheduleID" value="@Model.Schedule.ScheduleID" />
+
+    <div class="form-group mt-3">
+        @foreach (var group in Model.TeGjithaGrupet)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="@group.GrupiID" name="selectedGroups" id="group_@group.GrupiID">
+                <label class="form-check-label" for="group_@group.GrupiID">
+                    @group.Viti - @group.Paraleli
+                </label>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Shto grupet</button>
+</form>
+}

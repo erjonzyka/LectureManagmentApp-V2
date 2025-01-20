@@ -2,8 +2,17 @@
 @using LectureAppLibrary.Models
 @model List<Schedule> 
 
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
 
-<table class="table table-hover">
+
+
+<table class="table table-hover text-center">
     <thead>
         <tr>
             <th scope="col">Fillimi</th>
@@ -12,6 +21,8 @@
             <th scope="col">Pedagogu</th>
             <th scope="col">Lenda</th>
             <th scope="col">Veprim</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -23,14 +34,30 @@
                  <td>@item.Classroom.SallaNo</td>
                 <td>@item.PedagogLenda.Pedagog.FirstName @item.PedagogLenda.Pedagog.LastName</td>
                 <td>@item.PedagogLenda.Lenda.EmriLendes</td>
-                <td>
                     <!-- Per tu rregulluar neser -->
+                    @{
+                        TimeSpan timeDifference = @item.StartTime - DateTime.Now;
+                        if (timeDifference.TotalMinutes > 5)
+                        {
+                        <td>
+                            <a asp-action="EditSchedule" asp-route-id="@item.ScheduleID">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </a>
+                        </td>
 
-                    <a asp-action="EditSchedule" asp-route-id="@item.ScheduleID" class="btn btn-sm btn-primary">
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                </td>
+                        <td>
+                            <a asp-action="ScheduleAndGroups" asp-route-id="@item.ScheduleID">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a asp-action="DeleteSchedule" asp-route-id="@item.ScheduleID" class="text-danger">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        }
+                        }
+                
         </tr>
         }
     </tbody>

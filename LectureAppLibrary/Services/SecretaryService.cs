@@ -116,6 +116,23 @@ namespace LectureAppLibrary.Services
                 .Where(e=> e.StartTime > DateTime.Now) .ToList();
         }
 
+        public Schedule? GetSchedule(int scheduleId)
+        {
+            return _context.Schedules
+    .Include(e => e.PedagogLenda)
+        .ThenInclude(e => e.Pedagog)
+    .Include(e => e.PedagogLenda)
+        .ThenInclude(e => e.Lenda)
+    .FirstOrDefault(e=> e.ScheduleID == scheduleId);
+        }
+
+
+        public List<ScheduleGrupi> GrupetQeMarrinPjese(int scheduleId)
+        {
+            return _context.ScheduleGrupet.Include(e => e.Grupi).Where(e => e.ScheduleID == scheduleId).ToList();
+        }
+
+
 
 
         private bool Save()

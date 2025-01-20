@@ -20,5 +20,7 @@ namespace LectureAppLibrary.Interfaces
         List<Pedagog> MerrPedagogetQeNukJapin(int lendaId);
         bool KontrolloLidhjenPedagogLende(int pedagogId, int lendaId);
         List<Schedule> GetUpcomingSchedules();
+        Schedule? GetSchedule(int scheduleId);
+        List<ScheduleGrupi> GrupetQeMarrinPjese(int scheduleId);
     }
 }

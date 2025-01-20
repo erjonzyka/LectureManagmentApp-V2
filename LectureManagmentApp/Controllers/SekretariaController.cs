@@ -340,5 +340,215 @@ namespace LectureManagmentApp.Controllers
         {
             return View(_secretary.GetUpcomingSchedules());
         }
+
+
+        [SecretaryCheck]
+        [HttpGet("schedule/edit/{id}")]
+        public IActionResult EditSchedule(int id)
+        {
+            ProductViewModel pvm = new ProductViewModel();
+            pvm.PedagogetDheLendet = _admin.MerrPedagogetDheLendet();
+            pvm.Classrooms = _admin.GetAllClassrooms();
+            pvm.Schedule = _secretary.GetSchedule(id);
+            return View(pvm);
+        }
+
+        [SecretaryCheck]
+        [HttpPost("post/edit/schedule/{id}")]
+        public IActionResult PostEditSchedule(int id, ProductViewModel pvm)
+        {
+            pvm.Schedule.VakademikID = (int)HttpContext.Session.GetInt32("VAkademikId");
+            List<string> errorMessages = new List<string>();
+
+            if (pvm.Schedule.StartTime == default)
+            {
+                errorMessages.Add("Data dhe ora e fillimit duhet të plotesohet.");
+            }
+            if (pvm.Schedule.EndTime == default)
+            {
+                errorMessages.Add("Data dhe ora e perfundimit duhet të plotesohet.");
+            }
+
+            if (pvm.Schedule.StartTime < DateTime.Now)
+            {
+                errorMessages.Add("Data dhe ora e fillimit nuk mund te jete ne te kaluaren.");
+            }
+            if (pvm.Schedule.EndTime < DateTime.Now)
+            {
+                errorMessages.Add("Data dhe ora e perfundimit nuk mund te jete ne te kaluaren.");
+            }
+
+            if (pvm.Schedule.StartTime.Hour < 8 || pvm.Schedule.EndTime.Hour > 18)
+            {
+                errorMessages.Add("Orari duhet te jete ndermjet 08:00 dhe 18:00.");
+            }
+            if (pvm.Schedule.StartTime >= pvm.Schedule.EndTime)
+            {
+                errorMessages.Add("Data dhe ora e fillimit duhet te jete me e hershme se ajo e perfundimit.");
+            }
+
+            var timeDifference = (pvm.Schedule.EndTime - pvm.Schedule.StartTime).TotalMinutes;
+            if (timeDifference < 5)
+            {
+                errorMessages.Add("Diferenca midis fillimit dhe përfundimit duhet të jetë të paktën 5 minuta.");
+            }
+
+            var isClassroomBusy = _context.Schedules.Any(s =>
+                s.ClassroomID == pvm.Schedule.ClassroomID &&
+                s.ScheduleID != id && // perjashtimi i schedule aktual
+                ((pvm.Schedule.StartTime >= s.StartTime && pvm.Schedule.StartTime < s.EndTime) ||
+                 (pvm.Schedule.EndTime > s.StartTime && pvm.Schedule.EndTime <= s.EndTime)));
+
+            if (isClassroomBusy)
+            {
+                errorMessages.Add("Salla eshte e zene per kete orar.");
+            }
+
+            var isPedagogLendaBusy = _context.Schedules.Any(s =>
+                s.PedagogLendaID == pvm.Schedule.PedagogLendaID &&
+                s.ScheduleID != id && // perjashtimi i schedule aktual
+                ((pvm.Schedule.StartTime >= s.StartTime && pvm.Schedule.StartTime < s.EndTime) ||
+                 (pvm.Schedule.EndTime > s.StartTime && pvm.Schedule.EndTime <= s.EndTime)));
+
+            if (isPedagogLendaBusy)
+            {
+                errorMessages.Add("Pedagogu/Lenda jane te zena per kete orar.");
+            }
+
+            if (errorMessages.Count > 0)
+            {
+                TempData["Errors"] = errorMessages;
+                pvm.PedagogetDheLendet = _admin.MerrPedagogetDheLendet();
+                pvm.Classrooms = _admin.GetAllClassrooms();
+                return View("EditSchedule", pvm);
+            }
+
+            var existingSchedule = _secretary.GetSchedule(id);
+            if (existingSchedule == null)
+            {
+                TempData["Errors"] = new List<string> { "Orari i specifikuar nuk ekziston." };
+                return RedirectToAction("OretMesimiView");
+            }
+
+            
+            existingSchedule.StartTime = pvm.Schedule.StartTime;
+            existingSchedule.EndTime = pvm.Schedule.EndTime;
+            existingSchedule.ClassroomID = pvm.Schedule.ClassroomID;
+            existingSchedule.PedagogLendaID = pvm.Schedule.PedagogLendaID;
+
+            _context.SaveChanges();
+
+            TempData["Message"] = "Orari u ndryshua me sukses.";
+            return RedirectToAction("OrariView");
+        }
+
+
+        [SecretaryCheck]
+        [HttpGet("schedule/and/groups/{id}")]
+        public IActionResult ScheduleAndGroups(int id)
+        {
+            ProductViewModel pvm = new ProductViewModel();
+            pvm.Schedule = _secretary.GetSchedule(id);
+            pvm.ListScheduleGrupi = _secretary.GrupetQeMarrinPjese(id);
+            pvm.TeGjithaGrupet = _context.Grupet.Where(g => !_context.ScheduleGrupet
+            .Any(sg => sg.GrupiID == g.GrupiID && sg.Schedule.StartTime < pvm.Schedule.EndTime && sg.Schedule.EndTime > pvm.Schedule.StartTime)).ToList();
+
+            return View (pvm);
+        }
+
+
+        [SecretaryCheck]
+        [HttpPost("add/groups/to/schedule")]
+        public IActionResult AddGroupsToSchedule(int ScheduleID, List<int> selectedGroups)
+        {
+            var schedule = _context.Schedules
+                .Include(s => s.ScheduleGrupet)
+                .FirstOrDefault(s => s.ScheduleID == ScheduleID);
+
+            if (schedule == null)
+            {
+                TempData["Errors"] = new List<string> { "Orari nuk u gjet." };
+                return RedirectToAction("OretMesimiView");
+            }
+
+            foreach (var groupId in selectedGroups)
+            {
+                var scheduleGrupi = new ScheduleGrupi
+                {
+                    ScheduleID = ScheduleID,
+                    GrupiID = groupId
+                };
+                _context.ScheduleGrupet.Add(scheduleGrupi);
+            }
+
+            _context.SaveChanges();
+
+            TempData["Message"] = "Grupet u shtuan me sukses në orar.";
+            return RedirectToAction("ScheduleAndGroups", new { id = ScheduleID });
+        }
+
+        [SecretaryCheck]
+        [HttpGet("hiq/grupin/{id}")]
+        public IActionResult HiqGrupin(int id)
+        {
+         
+            
+            ScheduleGrupi? scheduleGrupi = _context.ScheduleGrupet.Include(e => e.Schedule) .FirstOrDefault(e => e.Id == id);
+
+            if (scheduleGrupi == null)
+            {
+                TempData["Errors"] = new List<string> { "Grupi nuk u gjet." };
+                return RedirectToAction("ScheduleAndGroups", new { id = id });
+            }
+
+            if (scheduleGrupi.Schedule.StartTime < DateTime.Now)
+            {
+                TempData["Errors"] = new List<string> { "Nuk mund të hiqni grupin pasi ora e fillimit të orarit ka kaluar." };
+                return RedirectToAction("ScheduleAndGroups", new { id = id });
+            }
+
+
+                _context.ScheduleGrupet.Remove(scheduleGrupi);
+                _context.SaveChanges();
+
+                TempData["Message"] = "Grupi u hoq me sukses nga orari.";
+
+            return RedirectToAction("ScheduleAndGroups", new { id = scheduleGrupi.ScheduleID });
+        }
+
+
+        [SecretaryCheck]
+        [HttpGet("delete/schedule/{id}")]
+        public IActionResult DeleteSchedule(int id)
+        {
+            var schedule = _context.Schedules.Include(s => s.ScheduleGrupet)
+                                             .FirstOrDefault(s => s.ScheduleID == id);
+
+            if (schedule == null)
+            {
+                TempData["Errors"] = new List<string> { "Rezervimi nuk u gjet." };
+                return RedirectToAction("OrariView"); 
+            }
+
+            if (schedule.StartTime < DateTime.Now)
+            {
+                TempData["Errors"] = new List<string> { "Nuk mund të fshini rezervimin pasi ka kaluar koha e fillimit." };
+                return RedirectToAction("OrariView");
+            }
+
+            var scheduleGrupiList = _context.ScheduleGrupet.Where(sg => sg.ScheduleID == id).ToList();
+            _context.ScheduleGrupet.RemoveRange(scheduleGrupiList);
+
+            _context.Schedules.Remove(schedule);
+            _context.SaveChanges();
+
+            TempData["Message"] = "Rezervimi u fshi me sukses.";
+
+            return RedirectToAction("OrariView"); 
+        }
+
+
+
+
     }
 }
