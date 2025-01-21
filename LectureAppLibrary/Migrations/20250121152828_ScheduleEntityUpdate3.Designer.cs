@@ -4,6 +4,7 @@ using LectureAppLibrary;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LectureAppLibrary.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20250121152828_ScheduleEntityUpdate3")]
+    partial class ScheduleEntityUpdate3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,29 +123,6 @@ namespace LectureAppLibrary.Migrations
                     b.HasKey("DepartmentID");
 
                     b.ToTable("Departmentet");
-                });
-
-            modelBuilder.Entity("LectureAppLibrary.Models.FailedStudent", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("LendaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LendaId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("FailedStudents");
                 });
 
             modelBuilder.Entity("LectureAppLibrary.Models.Grupi", b =>
@@ -460,25 +439,6 @@ namespace LectureAppLibrary.Migrations
                     b.Navigation("Lenda");
 
                     b.Navigation("Schedule");
-
-                    b.Navigation("Student");
-                });
-
-            modelBuilder.Entity("LectureAppLibrary.Models.FailedStudent", b =>
-                {
-                    b.HasOne("LectureAppLibrary.Models.Lenda", "Lenda")
-                        .WithMany()
-                        .HasForeignKey("LendaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("LectureAppLibrary.Models.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Lenda");
 
                     b.Navigation("Student");
                 });

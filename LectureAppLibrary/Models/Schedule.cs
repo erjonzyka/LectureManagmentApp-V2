@@ -17,6 +17,7 @@ namespace LectureAppLibrary.Models
 
         [Required]
         public int ClassroomID { get; set; }
+        public string? Status { get; set; } = "Krijuar";
 
         [Required]
         public int VakademikID { get; set; }

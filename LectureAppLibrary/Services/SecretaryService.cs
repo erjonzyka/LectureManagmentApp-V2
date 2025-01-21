@@ -116,6 +116,15 @@ namespace LectureAppLibrary.Services
                 .Where(e=> e.StartTime > DateTime.Now) .ToList();
         }
 
+        public List<Schedule> GetPreviousSchedules()
+        {
+            return _context.Schedules.Include(e => e.PedagogLenda)
+                .ThenInclude(e => e.Lenda)
+                .Include(e => e.PedagogLenda.Pedagog)
+                .Include(e => e.Classroom)
+                .Where(e => e.StartTime < DateTime.Now).ToList();
+        }
+
         public Schedule? GetSchedule(int scheduleId)
         {
             return _context.Schedules

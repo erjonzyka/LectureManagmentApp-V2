@@ -24,5 +24,8 @@ namespace LectureAppLibrary.Models
         public List<PedagogLenda>? PedagogetDheLendet { get; set; }
         public Schedule? Schedule { get; set; }
         public List<ScheduleGrupi>? ListScheduleGrupi {  get; set; }
+        public Attendance? Attendance { get; set; }
+       // public Dictionary<Grupi, List<Student>> StudentDictionary { get; set; } 
+        public List<Attendance>? Attendances { get; set; }
     }
 }

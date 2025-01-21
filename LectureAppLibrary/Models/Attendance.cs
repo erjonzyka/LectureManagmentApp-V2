@@ -11,14 +11,16 @@ namespace LectureAppLibrary.Models
     {
         [Key]
         public int AttendanceID { get; set; }
-        public DateTime Date { get; set; }
-        public string Status { get; set; } 
+        public int? OretZhvilluara {  get; set; }
+        public bool Status { get; set; } = false;
+        public int? LendaId { get; set; }
 
         public int ScheduleID { get; set; }
         public int StudentID { get; set; }
 
  
         public Schedule? Schedule { get; set; }
+        public Lenda? Lenda { get; set; }
         public Student? Student { get; set; }
     }
 }

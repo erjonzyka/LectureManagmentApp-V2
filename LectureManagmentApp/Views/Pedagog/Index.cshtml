@@ -1,6 +1,55 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@using LectureAppLibrary.Models
+@model List<Schedule> 
+
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 }
-<h1>Ketu je pedagog</h1>
+
+
+
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">Lenda</th>
+            <th scope="col">Fillimi</th>
+            <th scope="col">Kohezgjatja</th>
+            <th scope="col">Salla</th>
+            <th scope="col">Veprim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var duration = item.EndTime - item.StartTime;
+            string durationText = "";
+            if (duration.Hours > 0)
+            {
+                durationText += $"{duration.Hours} ore ";
+            }
+            if (duration.Minutes > 0)
+            {
+                durationText += $"{duration.Minutes} minuta";
+            }
+            <tr>
+            <td>@item.PedagogLenda.Lenda.EmriLendes</td>
+            <td>@item.StartTime.ToString("hh:mm")</td>
+            <td>@durationText</td>
+            <td>@item.Classroom.SallaNo</td>
+                @if (item.Status != "Perfunduar")
+                {
+                    <td><a class="btn btn-outline-primary" asp-action="CheckIn" asp-route-id="@item.ScheduleID">Check-In</a></td>
+                }
+                else
+                {
+                    <td><a class="btn btn-outline-primary" asp-action="SaktesoPrezencen" asp-route-id="@item.ScheduleID">Sakteso Prezencen</a></td>
+                }
+        </tr>
+        }
+    </tbody>
+</table>

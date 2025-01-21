@@ -1,0 +1,47 @@
+﻿@using LectureAppLibrary.Models
+@model ProductViewModel
+
+<h2>Sakteso Prezencën për @Model.Schedule.PedagogLenda.Lenda.EmriLendes</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+
+<form asp-action="KonfirmoPrezencen" asp-controller="Pedagog" method="post" asp-route-id="@Model.Schedule.ScheduleID">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Emri</th>
+                <th>Mbiemri</th>
+                <th>Grupi</th>
+                <th>Prezencë</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Attendances)
+            {
+                <tr>
+                    <td>@item.Student.FirstName</td>
+                    <td>@item.Student.LastName</td>
+                    @if (item.Status)
+                    {
+                        <td>
+                            <input type="checkbox" name="PresentStudents" value="@item.StudentID" checked/>
+                        </td>
+                    }
+                    else{
+                        <td>
+                            <input type="checkbox" name="PresentStudents" value="@item.StudentID" checked />
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Konfirmo</button>
+</form>

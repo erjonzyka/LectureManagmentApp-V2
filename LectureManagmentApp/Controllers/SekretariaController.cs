@@ -335,10 +335,14 @@ namespace LectureManagmentApp.Controllers
         }
 
         [SecretaryCheck]
-        [HttpGet("orari/view")]
-        public IActionResult OrariView()
+        [HttpGet("orari/view/{id}")]
+        public IActionResult OrariView(int id = 1)
         {
-            return View(_secretary.GetUpcomingSchedules());
+            if (id == 1)
+            {
+                return View(_secretary.GetUpcomingSchedules());
+            }
+            return View(_secretary.GetPreviousSchedules());
         }
 
 

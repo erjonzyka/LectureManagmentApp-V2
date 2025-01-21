@@ -22,5 +22,6 @@ namespace LectureAppLibrary.Interfaces
         List<Schedule> GetUpcomingSchedules();
         Schedule? GetSchedule(int scheduleId);
         List<ScheduleGrupi> GrupetQeMarrinPjese(int scheduleId);
+        List<Schedule> GetPreviousSchedules();
     }
 }

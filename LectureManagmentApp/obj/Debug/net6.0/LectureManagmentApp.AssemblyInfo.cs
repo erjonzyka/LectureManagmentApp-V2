@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LectureManagmentApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f06881dc49134c5f9473e62837db74d2f4343b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+426a8c957929f43562494377d7df7e71cede882f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LectureManagmentApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LectureManagmentApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

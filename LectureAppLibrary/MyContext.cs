@@ -28,6 +28,7 @@ namespace LectureAppLibrary
         public DbSet<PedagogLenda> PedagogLenda { get; set; }
         public DbSet<ScheduleGrupi> ScheduleGrupet { get; set; }
         public DbSet<VitiAkademik> VitetAkademike { get; set; }
+        public DbSet<FailedStudent> FailedStudents { get; set; }
 
 
     }
