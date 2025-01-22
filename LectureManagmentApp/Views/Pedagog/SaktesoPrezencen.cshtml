@@ -27,6 +27,7 @@
                 <tr>
                     <td>@item.Student.FirstName</td>
                     <td>@item.Student.LastName</td>
+                    <td>@item.Student.Grupi.Viti - @item.Student.Grupi.Paraleli</td>
                     @if (item.Status)
                     {
                         <td>
@@ -35,7 +36,7 @@
                     }
                     else{
                         <td>
-                            <input type="checkbox" name="PresentStudents" value="@item.StudentID" checked />
+                            <input type="checkbox" name="PresentStudents" value="@item.StudentID"  />
                         </td>
                     }
                 </tr>

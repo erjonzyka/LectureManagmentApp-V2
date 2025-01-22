@@ -32,7 +32,7 @@ namespace LectureManagmentApp.Controllers
                 .ThenInclude(e => e.Lenda)
                 .Include(e => e.PedagogLenda.Pedagog)
                 .Include(e => e.Classroom)
-                .Where(e => e.StartTime.Date > DateTime.Today && e.PedagogLenda.PedagogID == (int)HttpContext.Session.GetInt32("PedagogId")).ToList(); //ndryshuar kushti per shkak testimi
+                .Where(e => e.StartTime.Date == DateTime.Today && e.PedagogLenda.PedagogID == (int)HttpContext.Session.GetInt32("PedagogId")).ToList(); //ndryshuar kushti per shkak testimi
             return View(schedules);
         }
 
@@ -158,6 +158,9 @@ namespace LectureManagmentApp.Controllers
             return RedirectToAction("CheckIn", new { id });
         }
 
+
+
+
         [HttpGet("mbylloren/{id}")]
         public IActionResult MbyllOren(int id)
         {
@@ -188,11 +191,23 @@ namespace LectureManagmentApp.Controllers
 
             foreach (var student in studentsToNotify)
             {
-               /* SendEmail(student.Email, "Njoftim për mungesat", $@"
-            I dashur {student.FirstName} {student.LastName},
-            Ju keni tejkaluar numrin e lejuar të mungesave për lëndën {schedule.PedagogLenda.Lenda.Emri}.
-            Ju lutemi kontaktoni pedagogun tuaj për detaje të mëtejshme.
-        ");*/        //per tu implementuar
+                bool alreadyFailed = _context.FailedStudents.Any(fs =>
+                   fs.StudentId == student.StudentID && fs.LendaId == schedule.PedagogLenda.LendaID);
+                if (!alreadyFailed)
+                {
+                    FailedStudent? fs = new FailedStudent
+                    {
+                        StudentId = student.StudentID,
+                        LendaId = schedule.PedagogLenda.LendaID
+                    };
+                    _context.Add(fs);
+
+                    /* SendEmail(student.Email, "Njoftim për mungesat", $@"
+                 I dashur {student.FirstName} {student.LastName},
+                 Ju keni tejkaluar numrin e lejuar të mungesave për lëndën {schedule.PedagogLenda.Lenda.Emri}.
+                 Ju lutemi kontaktoni pedagogun tuaj për detaje të mëtejshme.
+             ");*/        //per tu implementuar
+                }
             }
 
 
@@ -200,6 +215,8 @@ namespace LectureManagmentApp.Controllers
 
             return RedirectToAction("Index");
         }
+
+
 
 
 
@@ -218,18 +235,17 @@ namespace LectureManagmentApp.Controllers
 
 
             var currentDate = DateTime.Now.Date; 
-           /* if (schedule.EndTime.Date != currentDate)
+            if (schedule.EndTime.Date != currentDate)
             {
                 TempData["Message"] = "Ora e mesimit nuk mund te saktesohet sepse ka perfunduar afati.";
                 return RedirectToAction("Index");
-            }*/
+            }
 
 
             List<Attendance> attendances = _context.Attendances.Where(a => a.ScheduleID == id).Include(a => a.Student).ThenInclude(s => s.Grupi)
          .OrderBy(a => a.Student.Grupi.Viti) .ThenBy(a => a.Student.Grupi.Paraleli).ToList();
 
 
-           // var studentet = attendances.GroupBy(a => a.Student.Grupi).ToDictionary(g => g.Key, g => g.Select(a => a.Student).ToList());
 
             ProductViewModel pvm = new ProductViewModel
             {
@@ -238,6 +254,91 @@ namespace LectureManagmentApp.Controllers
             };
 
             return View(pvm); 
+        }
+
+
+        [PedagogCheck]
+        [HttpPost]
+        public IActionResult KonfirmoPrezencen(int id, List<int> PresentStudents)
+        {
+            
+            Schedule schedule = _context.Schedules
+                .Include(s => s.PedagogLenda)
+                .FirstOrDefault(s => s.ScheduleID == id);
+
+            if (schedule == null)
+            {
+                TempData["Message"] = "Orari nuk u gjet.";
+                return RedirectToAction("Index");
+            }
+
+            // Marrim prezencat e studenteve
+            List<Attendance> allAttendances = _context.Attendances
+                .Where(a => a.ScheduleID == id)
+                .ToList();
+
+            // Perditesojme statusin e prezences
+            foreach (var attendance in allAttendances)
+            {
+                attendance.Status = PresentStudents.Contains(attendance.StudentID);  //nqs lista e permban studentId e shenon prezencen si true, ne te kundert false
+            }
+            _context.SaveChanges();
+
+            // Marrim oret limit qe mund te mungojne per lenden
+            int limitiMungesave = _pedagog.KufiriMungesave(schedule.PedagogLenda.LendaID);
+
+            // Lista e studenteve qe e kane kaluar limitin, vetem id e tyre
+            List<int> studentsOverLimit = _context.Attendances
+                .Where(a => a.LendaId == schedule.PedagogLenda.LendaID && !a.Status)
+                .GroupBy(a => a.StudentID)
+                .Where(g => g.Sum(a => a.OretZhvilluara ?? 0) > limitiMungesave)
+                .Select(g => g.Key)
+                .ToList();
+
+            // Perditesimi ne tabelen FailedStudent
+            List<FailedStudent> failedStudents = _context.FailedStudents.Where(fs => fs.LendaId == schedule.PedagogLenda.LendaID).ToList();
+
+            foreach (var failedStudent in failedStudents)
+            {
+                // Heqim nga tabela studentet qe nuk jane me te ngelur
+                if (!studentsOverLimit.Contains(failedStudent.StudentId))
+                {
+                    _context.FailedStudents.Remove(failedStudent);
+                }
+            }
+
+            // Shtojme studentet qe kane ngelur pas perditesimit
+            foreach (var studentId in studentsOverLimit)
+            {
+                bool alreadyFailed = _context.FailedStudents.Any(fs =>
+                    fs.StudentId == studentId && fs.LendaId == schedule.PedagogLenda.LendaID);
+                // nqs nuk ka qen i ngelur para perditesimit shtohet ne tabele
+                if (!alreadyFailed)
+                {
+                    _context.FailedStudents.Add(new FailedStudent
+                    {
+                        StudentId = studentId,
+                        LendaId = schedule.PedagogLenda.LendaID
+                    });
+
+                     Student? student = _context.Students.FirstOrDefault(s => s.StudentID == studentId);
+
+                   /* SendEmail(student.Email, "Njoftim për mungesat", $@"
+            I dashur {student.FirstName} {student.LastName},
+            Ju keni tejkaluar numrin e lejuar të mungesave për lëndën {schedule.PedagogLenda.Lenda.Emri}.
+            Ju lutemi kontaktoni pedagogun tuaj për detaje të mëtejshme.
+        ");*/
+
+
+
+                }
+            }
+
+            // Ruaj ndryshimet
+            _context.SaveChanges();
+
+            TempData["Message"] = "Prezenca u perditesua me sukses.";
+            return RedirectToAction("Index");
         }
 
 
