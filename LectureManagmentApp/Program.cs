@@ -13,6 +13,8 @@ builder.Services.AddTransient<IAdminService, AdminService>();
 builder.Services.AddTransient<ILoginService, LoginService>();
 builder.Services.AddTransient<ISecretaryService, SecretaryService>();
 builder.Services.AddTransient<IPedagogService, PedagogService>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddSingleton<EmailService>();
 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

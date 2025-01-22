@@ -3,6 +3,7 @@ using LectureAppLibrary;
 using Microsoft.AspNetCore.Mvc;
 using LectureAppLibrary.Models;
 using Microsoft.EntityFrameworkCore;
+using LectureAppLibrary.Services;
 
 namespace LectureManagmentApp.Controllers
 {
@@ -13,16 +14,18 @@ namespace LectureManagmentApp.Controllers
 
         public ISecretaryService _secretary { get; }
         public IPedagogService _pedagog { get; }
+        public EmailService _email { get; }
         public IWebHostEnvironment _environment { get; }
         public MyContext _context { get; }
 
-        public PedagogController(ILogger<PedagogController> logger, ISecretaryService secretary, IPedagogService pedagog, IWebHostEnvironment environment, MyContext context)
+        public PedagogController(ILogger<PedagogController> logger, ISecretaryService secretary, IPedagogService pedagog, IWebHostEnvironment environment,EmailService email ,MyContext context)
         {
             _logger = logger;
             _secretary = secretary;
             _pedagog = pedagog;
             _environment = environment;
             _context = context;
+            _email = email;
         }
 
         [PedagogCheck]
@@ -162,7 +165,7 @@ namespace LectureManagmentApp.Controllers
 
 
         [HttpGet("mbylloren/{id}")]
-        public IActionResult MbyllOren(int id)
+        public async Task<IActionResult> MbyllOren(int id)
         {
 
             var schedule = _context.Schedules
@@ -202,11 +205,13 @@ namespace LectureManagmentApp.Controllers
                     };
                     _context.Add(fs);
 
-                    /* SendEmail(student.Email, "Njoftim për mungesat", $@"
-                 I dashur {student.FirstName} {student.LastName},
-                 Ju keni tejkaluar numrin e lejuar të mungesave për lëndën {schedule.PedagogLenda.Lenda.Emri}.
-                 Ju lutemi kontaktoni pedagogun tuaj për detaje të mëtejshme.
-             ");*/        //per tu implementuar
+                    await _email.SendEmailAsync(
+                student.Email,
+                "Njoftim për mungesat",
+                $@"
+                I nderuar {student.FirstName} {student.LastName},
+                Ju keni tejkaluar numrin e lejuar te mungesave per lenden {schedule.PedagogLenda.Lenda.EmriLendes}.
+                Ju lutemi kontaktoni pedagogun tuaj per detaje te metejshme.");
                 }
             }
 
@@ -259,7 +264,7 @@ namespace LectureManagmentApp.Controllers
 
         [PedagogCheck]
         [HttpPost]
-        public IActionResult KonfirmoPrezencen(int id, List<int> PresentStudents)
+        public async Task<IActionResult> KonfirmoPrezencen(int id, List<int> PresentStudents)
         {
             
             Schedule schedule = _context.Schedules
@@ -323,11 +328,13 @@ namespace LectureManagmentApp.Controllers
 
                      Student? student = _context.Students.FirstOrDefault(s => s.StudentID == studentId);
 
-                   /* SendEmail(student.Email, "Njoftim për mungesat", $@"
-            I dashur {student.FirstName} {student.LastName},
-            Ju keni tejkaluar numrin e lejuar të mungesave për lëndën {schedule.PedagogLenda.Lenda.Emri}.
-            Ju lutemi kontaktoni pedagogun tuaj për detaje të mëtejshme.
-        ");*/
+                    await _email.SendEmailAsync(
+                 student.Email,
+                 "Njoftim për mungesat",
+                 $@"
+                I nderuar {student.FirstName} {student.LastName},
+                Ju keni tejkaluar numrin e lejuar te mungesave per lëndën {schedule.PedagogLenda.Lenda.EmriLendes}.
+                Ju lutemi kontaktoni pedagogun tuaj per detaje te metejshme.");
 
 
 
